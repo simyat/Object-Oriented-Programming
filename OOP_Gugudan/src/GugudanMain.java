@@ -1,43 +1,34 @@
 import java.util.Scanner;
 
-public class Gugudan {
-    public static void main(String[] args) {
-        GugudanMain main = new GugudanMain();
-        main.gugudanProgram();
-    }
-
-
-}
-
-class GugudanMain{
+public class GugudanMain{
     public void gugudanProgram(){
         Scanner sc = new Scanner(System.in);
 
         while(true){
             System.out.print("출력할 구구단을 입력하세요, 종료하려면 0을 입력하세요 : ");
-            int num = sc.nextInt();
-            if(num >= 2 && num <= 9){
-                calc(num);
-            } else if (num == 0) {
-                System.out.println("구구단을 종료합니다. ");
+            String inputValue = sc.nextLine();
+            if(inputValue.equals("0")){
+                System.out.println("종료합니다. ");
                 break;
-            } else {
-                System.out.println("2이상, 9 이하 값만 입력할 수 있습니다.");
+            }
+            String[] num = inputValue.split(",");
+
+            int num1 = Integer.parseInt(num[0]);
+            int num2 = Integer.parseInt(num[1]);
+
+            calc(num1, num2);
+        }
+    }
+
+    public void calc(int num1, int num2) {
+        for (int i = 2; i <= num1; i++) {
+            System.out.println(i + "단");
+            for (int j = 1; j <= num2; j++) {
+                int result = i * j;
+                System.out.println("\t" + result);
             }
         }
     }
 
-    public void calc(int num) {
-        int[] result = new int[9];
-        for (int j = 0; j < result.length; j++) {
-            result[j] = num * (j+1);
-        }
-        print(result);
-    }
 
-    public void print(int[] result){
-        for (int i = 0; i < result.length; i++) {
-            System.out.println(result[i]);
-        }
-    }
 }
