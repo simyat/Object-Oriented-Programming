@@ -1,3 +1,5 @@
+package variable_In_Memory;
+
 public class Start4 {
     public static void main(String[] args) {
         int k = 5;

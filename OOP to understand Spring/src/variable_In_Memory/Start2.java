@@ -1,3 +1,5 @@
+package variable_In_Memory;
+
 public class Start2 {
     public static void main(String[] args) {
         int i;
