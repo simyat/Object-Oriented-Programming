@@ -12,12 +12,14 @@ public class MouseDriver {
 
         mickey = null;
 
-        Mouse jerry = new Mouse();
+        Mouse jerry = new Mouse("제리", 13, 1);
+        System.out.println(jerry.name);
+        System.out.println(jerry.age);
+        System.out.println(jerry.countOfTail);
 
-        jerry.name = "제리";
-        jerry.age = 73;
-        jerry.countOfTail = 1;
+
 
         jerry.sing();
     }
 }
+
