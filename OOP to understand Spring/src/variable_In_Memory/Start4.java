@@ -2,18 +2,18 @@ package variable_In_Memory;
 
 public class Start4 {
     public static void main(String[] args) {
-        int k = 5;
+        double j = 5;
         int m;
-
-        m = square(k);
+        m = square(j);
+        // System.out.println(result);
     }
 
-    private static int square(int k){
+    private static int square(double k){
         int result;
 
         k = 25;
 
-        result = k;
+        result = (int)k;
 
         return result;
     }

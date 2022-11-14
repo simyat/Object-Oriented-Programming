@@ -9,6 +9,12 @@ public class Start5 {
         int k = fun(5, 7);
 
         System.out.println(share);
+
+//        People inmo = new People();
+//        inmo.name= "inmo";
+//        System.out.println(inmo.name);
+//        inmo = null;
+//        System.out.println(inmo.name);
     }
 
     private static int fun(int m, int p ){
@@ -16,4 +22,8 @@ public class Start5 {
 
         return m - p;
     }
+}
+
+class People{
+    String name;
 }

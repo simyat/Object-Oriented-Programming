@@ -12,14 +12,15 @@ public class Start6 extends Thread{
     }
 
     public void run(){
-        for (int count = 0; count < 10; count++) {
+        for (int i = 0; i < 10; i++) {
+            // System.out.println(Thread.currentThread().getName() + " : ");
             System.out.println(share++);
-        }
 
-        try {
-            sleep(1000);
-        } catch (InterruptedException e){
+            try{
+                sleep(1000);
+            }catch (InterruptedException e){
 
+            }
         }
     }
 }
