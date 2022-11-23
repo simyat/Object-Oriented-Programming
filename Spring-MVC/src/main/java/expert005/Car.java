@@ -1,9 +1,9 @@
 package expert005;
 
-// import javax.annotation.Resource;
+import javax.annotation.Resource;
 
 public class Car {
-    // @Resource;
+    @Resource
     Tire tire;
 //    public Tire getTire(){
 //        return tire;
