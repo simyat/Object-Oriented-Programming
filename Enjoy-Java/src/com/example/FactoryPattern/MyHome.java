@@ -1,0 +1,7 @@
+package com.example.FactoryPattern;
+
+public class MyHome {
+    public void a() {
+        System.out.println("a 라는 메소드를 MyHome이 가지고 있다.");
+    }
+}
