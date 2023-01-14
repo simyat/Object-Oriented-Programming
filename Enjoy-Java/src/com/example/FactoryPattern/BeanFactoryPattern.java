@@ -14,7 +14,7 @@ public class BeanFactoryPattern {
         b1.a();
         b2.a();
 
-        // Bus b3 = new Bus();
+        // EnjoyJava.Bus b3 = new EnjoyJava.Bus();
 
     }
 }
