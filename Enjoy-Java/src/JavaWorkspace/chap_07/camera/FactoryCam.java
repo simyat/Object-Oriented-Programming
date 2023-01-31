@@ -2,7 +2,14 @@ package JavaWorkspace.chap_07.camera;
 
 public class FactoryCam extends Camera{ // 하위 클래스
     public FactoryCam() {
-        this.name = "공장 카메라";
+//        this.name = "공장 카메라";
+        super("공장 카메라"); // protected 생성자 호출
+    }
+
+    @Override
+    public void recordVedio() {
+        super.recordVedio();
+        detectFire();
     }
 
     public void detectFire() {
